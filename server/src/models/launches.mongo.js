@@ -29,3 +29,7 @@ const launchesSchema = new mongoose.Schema({
     default: true,
   },
 });
+
+// Connects launchesSchema with the "launches" colletion
+// this line of code is called "Compiling the model"
+module.exports = mongoose.model("Launch", launchesSchema);

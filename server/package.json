@@ -4,9 +4,9 @@
   "description": "NASA Mission Control API",
   "main": "src/server.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --detectOpenHandles",
     "test-watch": "jest --watch",
-    "watch": "nodemon server.js",
+    "watch": "nodemon src/server.js",
     "start": "node src/server.js",
     "cluster": "pm2 start src/server.js -i max"
   },
