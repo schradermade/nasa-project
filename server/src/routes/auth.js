@@ -19,7 +19,6 @@ function verifyCallback(accessToken, refreshToken, profile, done) {
 }
 
 auth.use(passport.initialize());
-
 passport.use(new Strategy(AUTH_OPTIONS, verifyCallback));
 
 auth.get(
